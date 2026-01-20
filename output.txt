@@ -1,0 +1,535 @@
+#Outputs
+
+1. az login --use-device-code
+  OUTPUT :
+	To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code ********* to authenticate.
+
+
+2. az account show          
+ OUTPUT : 
+
+{
+  "environmentName": "AzureCloud",
+  "homeTenantId": "d81969ea-5ed7-42e5-b9d5-c433017d1305",
+  "id": "40e25180-18b4-4b7d-8554-4757cdd9a55c",
+  "isDefault": true,
+  "managedByTenants": [],
+  "name": "Azure subscription 1",
+  "state": "Enabled",
+  "tenantDefaultDomain": "neethumohanan28gmail.onmicrosoft.com",
+  "tenantDisplayName": "Default Directory",
+  "tenantId": "d81969ea-5ed7-42e5-b9d5-c433017d1305",
+  "user": {
+    "name": "neethumohanan28@gmail.com",
+    "type": "user"
+  }
+}
+
+
+3. az ad signed-in-user show
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "businessPhones": [],
+  "displayName": "Neethu Mohan",
+  "givenName": "Neethu",
+  "id": "0714a56a-2f0f-48d8-af45-2c3545a4b195",
+  "jobTitle": null,
+  "mail": null,
+  "mobilePhone": null,
+  "officeLocation": null,
+  "preferredLanguage": "en",
+  "surname": "Mohan",
+  "userPrincipalName": "neethumohanan28_gmail.com#EXT#@neethumohanan28gmail.onmicrosoft.com"
+}
+ 
+
+4. az account list-locations --output table
+
+DisplayName               Name                 RegionalDisplayName
+------------------------  -------------------  -------------------------------------
+East US                   eastus               (US) East US
+West US 2                 westus2              (US) West US 2
+Australia East            australiaeast        (Asia Pacific) Australia East
+Southeast Asia            southeastasia        (Asia Pacific) Southeast Asia
+North Europe              northeurope          (Europe) North Europe
+Sweden Central            swedencentral        (Europe) Sweden Central
+West Europe               westeurope           (Europe) West Europe
+UK South                  uksouth              (UK) UK South
+Central US                centralus            (US) Central US
+South Africa North        southafricanorth     (Africa) South Africa North
+Central India             centralindia         (Asia Pacific) Central India
+East Asia                 eastasia             (Asia Pacific) East Asia
+Indonesia Central         indonesiacentral     (Asia Pacific) Indonesia Central
+Japan East                japaneast            (Asia Pacific) Japan East
+Japan West                japanwest            (Asia Pacific) Japan West
+Korea Central             koreacentral         (Asia Pacific) Korea Central
+Malaysia West             malaysiawest         (Asia Pacific) Malaysia West
+New Zealand North         newzealandnorth      (Asia Pacific) New Zealand North
+Canada Central            canadacentral        (Canada) Canada Central
+Austria East              austriaeast          (Europe) Austria East
+Belgium Central           belgiumcentral       (Europe) Belgium Central
+France Central            francecentral        (Europe) France Central
+Germany West Central      germanywestcentral   (Europe) Germany West Central
+Italy North               italynorth           (Europe) Italy North
+Norway East               norwayeast           (Europe) Norway East
+Poland Central            polandcentral        (Europe) Poland Central
+Spain Central             spaincentral         (Europe) Spain Central
+Switzerland North         switzerlandnorth     (Europe) Switzerland North
+Mexico Central            mexicocentral        (Mexico) Mexico Central
+UAE North                 uaenorth             (Middle East) UAE North
+Brazil South              brazilsouth          (South America) Brazil South
+Chile Central             chilecentral         (South America) Chile Central
+East US 2 EUAP            eastus2euap          (US) East US 2 EUAP
+Israel Central            israelcentral        (Middle East) Israel Central
+Qatar Central             qatarcentral         (Middle East) Qatar Central
+Central US (Stage)        centralusstage       (US) Central US (Stage)
+East US (Stage)           eastusstage          (US) East US (Stage)
+East US 2 (Stage)         eastus2stage         (US) East US 2 (Stage)
+North Central US (Stage)  northcentralusstage  (US) North Central US (Stage)
+South Central US (Stage)  southcentralusstage  (US) South Central US (Stage)
+West US (Stage)           westusstage          (US) West US (Stage)
+West US 2 (Stage)         westus2stage         (US) West US 2 (Stage)
+Asia                      asia                 Asia
+Asia Pacific              asiapacific          Asia Pacific
+Australia                 australia            Australia
+Brazil                    brazil               Brazil
+Canada                    canada               Canada
+Europe                    europe               Europe
+France                    france               France
+Germany                   germany              Germany
+Global                    global               Global
+India                     india                India
+Indonesia                 indonesia            Indonesia
+Israel                    israel               Israel
+Italy                     italy                Italy
+Japan                     japan                Japan
+Korea                     korea                Korea
+Malaysia                  malaysia             Malaysia
+Mexico                    mexico               Mexico
+New Zealand               newzealand           New Zealand
+Norway                    norway               Norway
+Poland                    poland               Poland
+Qatar                     qatar                Qatar
+Singapore                 singapore            Singapore
+South Africa              southafrica          South Africa
+Spain                     spain                Spain
+Sweden                    sweden               Sweden
+Switzerland               switzerland          Switzerland
+Taiwan                    taiwan               Taiwan
+United Arab Emirates      uae                  United Arab Emirates
+United Kingdom            uk                   United Kingdom
+United States             unitedstates         United States
+United States EUAP        unitedstateseuap     United States EUAP
+East Asia (Stage)         eastasiastage        (Asia Pacific) East Asia (Stage)
+Southeast Asia (Stage)    southeastasiastage   (Asia Pacific) Southeast Asia (Stage)
+East US 2                 eastus2              (US) East US 2
+East US STG               eastusstg            (US) East US STG
+South Central US          southcentralus       (US) South Central US
+West US 3                 westus3              (US) West US 3
+North Central US          northcentralus       (US) North Central US
+West US                   westus               (US) West US
+Jio India West            jioindiawest         (Asia Pacific) Jio India West
+Central US EUAP           centraluseuap        (US) Central US EUAP
+South Central US STG      southcentralusstg    (US) South Central US STG
+West Central US           westcentralus        (US) West Central US
+South Africa West         southafricawest      (Africa) South Africa West
+Australia Central         australiacentral     (Asia Pacific) Australia Central
+Australia Central 2       australiacentral2    (Asia Pacific) Australia Central 2
+Australia Southeast       australiasoutheast   (Asia Pacific) Australia Southeast
+Jio India Central         jioindiacentral      (Asia Pacific) Jio India Central
+Korea South               koreasouth           (Asia Pacific) Korea South
+South India               southindia           (Asia Pacific) South India
+West India                westindia            (Asia Pacific) West India
+Canada East               canadaeast           (Canada) Canada East
+France South              francesouth          (Europe) France South
+Germany North             germanynorth         (Europe) Germany North
+Norway West               norwaywest           (Europe) Norway West
+Switzerland West          switzerlandwest      (Europe) Switzerland West
+UAE Central               uaecentral           (Middle East) UAE Central
+Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
+UK West                   ukwest               (UK) UK West
+ 
+
+5. az group list --output table
+
+Name              Location      Status
+----------------  ------------  ---------
+CSA-Demo          koreacentral  Succeeded
+NetworkWatcherRG  koreacentral  Succeeded
+                     
+                                                                                                                                        
+6. az resource list --output table
+
+Name                                                     ResourceGroup     Location      Type                                     Status
+-------------------------------------------------------  ----------------  ------------  ---------------------------------------  ---------
+demo-Ubuntu-1_key                                        CSA-Demo          koreacentral  Microsoft.Compute/sshPublicKeys          Succeeded
+demo-Ubuntu-1-nsg                                        CSA-Demo          koreacentral  Microsoft.Network/networkSecurityGroups  Succeeded
+demo-Ubuntu-2-ip                                         CSA-Demo          koreacentral  Microsoft.Network/publicIPAddresses      Succeeded
+demo-Ubuntu-1-vnet                                       CSA-Demo          koreacentral  Microsoft.Network/virtualNetworks        Succeeded
+NetworkWatcher_koreacentral                              NetworkWatcherRG  koreacentral  Microsoft.Network/networkWatchers        Succeeded
+demo-ubuntu-167_z2                                       CSA-Demo          koreacentral  Microsoft.Network/networkInterfaces      Succeeded
+demo-Ubuntu-2                                            CSA-Demo          koreacentral  Microsoft.Compute/virtualMachines        Succeeded
+demo-Ubuntu-2_OsDisk_1_c2947a6122324fe99d89639c3777936e  CSA-DEMO          koreacentral  Microsoft.Compute/disks                  Succeeded
+                       
+                                                                                                                                      
+7. az provider list --query "[].namespace" --output table
+
+Result
+-------------------------------------------------------
+Microsoft.Storage
+Microsoft.Compute
+Microsoft.ResourceHealth
+Microsoft.Network
+Microsoft.Advisor
+Microsoft.Security
+Microsoft.GuestConfiguration
+Microsoft.PolicyInsights
+ArizeAi.ObservabilityEval
+Astronomer.Astro
+Dell.Storage
+Dynatrace.Observability
+GitHub.Network
+Informatica.DataManagement
+LambdaTest.HyperExecute
+Liftrbasic.Samplerp
+Microsoft.AAD
+Microsoft.AadCusparameter is either empty or invalid.tings
+microsoft.aadiam
+Microsoft.Addons
+Microsoft.ADHybridHealthService
+Microsoft.AgriculturePlatform
+Microsoft.AlertsManagement
+Microsoft.AnalysisServices
+Microsoft.ApiCenter
+Microsoft.ApiManagement
+Microsoft.App
+Microsoft.AppAssessment
+Microsoft.AppComplianceAutomation
+Microsoft.AppConfiguration
+Microsoft.ApplicationMigration
+Microsoft.AppLink
+Microsoft.AppPlatform
+Microsoft.Approvals
+Microsoft.ArcContainerStorage
+Microsoft.Attestation
+Microsoft.Authorization
+Microsoft.Automanage
+Microsoft.Automation
+Microsoft.AVS
+Microsoft.AWSConnector
+Microsoft.AzureActiveDirectory
+Microsoft.AzureArcData
+Microsoft.AzureBusinessContinuity
+Microsoft.AzureDataTransfer
+Microsoft.AzureFleet
+Microsoft.AzureImageTestingForLinux
+Microsoft.AzureLargeInstance
+Microsoft.AzurePlaywrightService
+Microsoft.AzureResilienceManagement
+Microsoft.AzureScan
+Microsoft.AzureSphere
+Microsoft.AzureStack
+Microsoft.AzureStackHCI
+Microsoft.AzureTerraform
+Microsoft.BackupSolutions
+Microsoft.BareMetal
+Microsoft.BareMetalInfrastructure
+Microsoft.Batch
+Microsoft.Billing
+Microsoft.BillingBenefits
+Microsoft.Bing
+Microsoft.BlockchainTokens
+Microsoft.Blueprint
+Microsoft.BotService
+Microsoft.Cache
+Microsoft.Capacity
+Microsoft.Carbon
+Microsoft.Cdn
+Microsoft.CertificateRegistration
+Microsoft.ChangeSafety
+Microsoft.Chaos
+Microsoft.ClassicCompute
+Microsoft.ClassicInfrastructureMigrate
+Microsoft.ClassicNetwork
+Microsoft.ClassicStorage
+Microsoft.ClassicSubscription
+Microsoft.CleanRoom
+Microsoft.CloudDevicePlatform
+Microsoft.CloudHealth
+Microsoft.CloudShell
+Microsoft.CloudTest
+Microsoft.CodeSigning
+Microsoft.CognitiveServices
+Microsoft.Commerce
+Microsoft.Communication
+Microsoft.Community
+Microsoft.ComputeBulkActions
+Microsoft.ComputeLimit
+Microsoft.ComputeSchedule
+Microsoft.ConfidentialLedger
+Microsoft.Confluent
+Microsoft.ConnectedCache
+Microsoft.ConnectedCredentials
+microsoft.connectedopenstack
+Microsoft.ConnectedVehicle
+Microsoft.ConnectedVMwarevSphere
+Microsoft.Consumption
+Microsoft.ContainerInstance
+Microsoft.ContainerRegistry
+Microsoft.ContainerService
+Microsoft.CostManagement
+Microsoft.CostManagementExports
+Microsoft.CustomerLockbox
+Microsoft.CustomProviders
+Microsoft.D365CustomerInsights
+Microsoft.Dashboard
+Microsoft.DatabaseFleetManager
+Microsoft.DatabaseWatcher
+Microsoft.DataBox
+Microsoft.DataBoxEdge
+Microsoft.Databricks
+Microsoft.Datadog
+Microsoft.DataFactory
+Microsoft.DataLakeAnalytics
+Microsoft.DataLakeStore
+Microsoft.DataMigration
+Microsoft.DataProtection
+Microsoft.DataReplication
+Microsoft.DataShare
+Microsoft.DBforMariaDB
+Microsoft.DBforMySQL
+Microsoft.DBforPostgreSQL
+Microsoft.DependencyMap
+Microsoft.DesktopVirtualization
+Microsoft.DevCenter
+Microsoft.DevelopmentWindows365
+Microsoft.DevHub
+Microsoft.DeviceOnboarding
+Microsoft.DeviceRegistry
+Microsoft.Devices
+Microsoft.DeviceUpdate
+Microsoft.DevOpsInfrastructure
+Microsoft.DevTestLab
+Microsoft.DigitalTwins
+Microsoft.DirectoryStore
+Microsoft.Discovery
+Microsoft.DocumentDB
+Microsoft.DomainRegistration
+Microsoft.DurableTask
+Microsoft.Easm
+Microsoft.Edge
+Microsoft.EdgeManagement
+Microsoft.EdgeMarketplace
+Microsoft.EdgeOrder
+Microsoft.EdgeOrderPartner
+Microsoft.EdgeZones
+Microsoft.Elastic
+Microsoft.ElasticSan
+Microsoft.EnterpriseSupport
+Microsoft.EntitlementManagement
+Microsoft.EntraIDGovernance
+Microsoft.EntraIdGovernanceAccelerator
+Microsoft.ErrorAtlas
+Microsoft.EventGrid
+Microsoft.EventHub
+Microsoft.Experimentation
+Microsoft.ExtendedLocation
+Microsoft.Fabric
+Microsoft.Features
+Microsoft.FileShares
+Microsoft.FluidRelay
+Microsoft.GCPConnector
+Microsoft.GraphServices
+Microsoft.HanaOnAzure
+Microsoft.HardwareSecurityModules
+Microsoft.HDInsight
+Microsoft.HealthBot
+Microsoft.HealthcareApis
+Microsoft.HealthcareInterop
+Microsoft.HealthDataAIServices
+Microsoft.HealthModel
+Microsoft.HealthPlatform
+Microsoft.Help
+Microsoft.HybridCloud
+Microsoft.HybridCompute
+Microsoft.HybridConnectivity
+Microsoft.HybridContainerService
+Microsoft.HybridNetwork
+Microsoft.Impact
+microsoft.insights
+Microsoft.IntegrationSpaces
+Microsoft.IoTCentral
+Microsoft.IoTFirmwareDefense
+Microsoft.IoTOperations
+Microsoft.IoTOperationsDataProcessor
+Microsoft.IoTSecurity
+Microsoft.KeyVault
+Microsoft.Kubernetes
+Microsoft.KubernetesConfiguration
+Microsoft.KubernetesRuntime
+Microsoft.Kusto
+Microsoft.LabServices
+Microsoft.LoadTestService
+Microsoft.Logic
+Microsoft.MachineLearningServices
+Microsoft.Maintenance
+Microsoft.ManagedIdentity
+Microsoft.ManagedNetworkFabric
+Microsoft.ManagedOps
+Microsoft.ManagedServices
+Microsoft.Management
+Microsoft.Maps
+Microsoft.Marketplace
+Microsoft.MarketplaceOrdering
+Microsoft.MessagingCatalog
+Microsoft.MessagingConnectors
+Microsoft.Migrate
+Microsoft.Mission
+Microsoft.Monitor
+Microsoft.MySQLDiscovery
+Microsoft.NetApp
+Microsoft.NetworkCloud
+Microsoft.NetworkFunction
+Microsoft.NexusIdentity
+Microsoft.NotificationHubs
+Microsoft.Nutanix
+Microsoft.ObjectStore
+Microsoft.OffAzure
+Microsoft.OffAzureSpringBoot
+Microsoft.OnlineExperimentation
+Microsoft.OpenEnergyPlatform
+Microsoft.OperationalInsights
+Microsoft.OperationsManagement
+Microsoft.OperatorVoicemail
+Microsoft.OracleDiscovery
+Microsoft.Orbital
+Microsoft.PartnerManagedConsumerRecurrence
+Microsoft.Peering
+Microsoft.Pki
+Microsoft.Portal
+Microsoft.PortalServices
+Microsoft.PowerBI
+Microsoft.PowerBIDedicated
+Microsoft.PowerPlatform
+Microsoft.Premonition
+Microsoft.ProfessionalService
+Microsoft.ProviderHub
+Microsoft.Purview
+Microsoft.Quantum
+Microsoft.Quota
+Microsoft.RecommendationsService
+Microsoft.RecoveryServices
+Microsoft.RedHatOpenShift
+Microsoft.Relationships
+Microsoft.Relay
+Microsoft.ResourceBuilder
+Microsoft.ResourceConnector
+Microsoft.ResourceGraph
+Microsoft.ResourceIntelligence
+Microsoft.ResourceNotifications
+Microsoft.Resources
+Microsoft.SaaS
+Microsoft.SaaSHub
+Microsoft.Scom
+Microsoft.SCVMM
+Microsoft.Search
+Microsoft.SecretSyncController
+Microsoft.SecurityCopilot
+Microsoft.SecurityDetonation
+Microsoft.SecurityInsights
+Microsoft.SecurityPlatform
+Microsoft.SentinelPlatformServices
+Microsoft.SerialConsole
+Microsoft.ServiceBus
+Microsoft.ServiceFabric
+Microsoft.ServiceFabricMesh
+Microsoft.ServiceLinker
+Microsoft.ServiceNetworking
+Microsoft.ServicesHub
+Microsoft.SignalRService
+Microsoft.Singularity
+Microsoft.SoftwarePlan
+Microsoft.Solutions
+Microsoft.Sovereign
+Microsoft.Sql
+Microsoft.SqlVirtualMachine
+Microsoft.StandbyPool
+Microsoft.StorageActions
+Microsoft.StorageCache
+Microsoft.StorageDiscovery
+Microsoft.StorageMover
+Microsoft.StorageSync
+Microsoft.StorageTasks
+Microsoft.StreamAnalytics
+Microsoft.Subscription
+Microsoft.SupercomputerInfrastructure
+microsoft.support
+Microsoft.SustainabilityServices
+Microsoft.Synapse
+Microsoft.Syntex
+Microsoft.ToolchainOrchestrator
+Microsoft.UpdateManager
+Microsoft.UsageBilling
+Microsoft.Validate
+Microsoft.VerifiedId
+Microsoft.VideoIndexer
+Microsoft.VirtualMachineImages
+microsoft.visualstudio
+Microsoft.VMware
+Microsoft.VoiceServices
+Microsoft.Web
+Microsoft.WeightsAndBiases
+Microsoft.Windows365
+Microsoft.WindowsPushNotificationServices
+Microsoft.WorkloadBuilder
+Microsoft.Workloads
+MongoDB.Atlas
+Neon.Postgres
+NewRelic.Observability
+NGINX.NGINXPLUS
+Oracle.Database
+PaloAltoNetworks.Cloudngfw
+Pinecone.VectorDb
+PureStorage.Block
+Qumulo.Storage
+
+
+8. az group create --name cli-demo-rg --location northeurope 
+
+{
+  "id": "/subscriptions/40e25180-18b4-4b7d-8554-4757cdd9a55c/resourceGroups/cli-demo-rg",
+  "location": "northeurope",
+  "managedBy": null,
+  "name": "cli-demo-rg",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+
+
+9. az group show --name cli-demo-rg           
+
+{
+  "id": "/subscriptions/40e25180-18b4-4b7d-8554-4757cdd9a55c/resourceGroups/cli-demo-rg",
+  "location": "northeurope",
+  "managedBy": null,
+  "name": "cli-demo-rg",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+
+
+10. az group delete --name cli-demo-rg --yes --no-wait 
+
+11. az group list --output table
+
+Name              Location      Status
+----------------  ------------  ---------
+CSA-Demo          koreacentral  Succeeded
+NetworkWatcherRG  koreacentral  Succeeded

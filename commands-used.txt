@@ -1,0 +1,13 @@
+#Commands-used
+
+1. az login --use-device-code
+2. az account show
+3. az ad signed-in-user show
+4. az account list-locations --output table
+5. az group list --output table
+6. az resource list --output table
+7. az provider list --query "[].namespace" --output table
+8. az group create --name cli-demo-rg --location northeurope
+9. az group show --name cli-demo-rg
+10. az group delete --name cli-demo-rg --yes --no-wait
+11. az group list --output table
